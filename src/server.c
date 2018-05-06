@@ -309,7 +309,7 @@ int main(int argc, char **argv)
 	 * so, don't close them; but we want to mute errors
 	 * just like a typical daemon
 	 */
-	daemon(0, 1);
+	// daemon(0, 1);
 	fd = open ("/dev/null", O_RDWR, 0);
 	if (fd != -1)
 		dup2 (fd, STDERR_FILENO);
